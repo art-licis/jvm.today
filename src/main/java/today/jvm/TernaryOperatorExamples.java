@@ -36,7 +36,7 @@ public class TernaryOperatorExamples {
         System.out.println(getClazz(_true ? 1d : (short) 2));
 
         // System.out.print("Example (P-8) -- boolean/byte:\n\t");
-        // System.out.println(getClazz(_false ? true : (byte) 1));
+        // System.out.println(getClazz(_true ? true : (byte) 1));
 
         /* Wrappers */
         System.out.print("Example (W-0) -- Double/Double:\n\t");
