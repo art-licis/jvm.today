@@ -20,17 +20,17 @@ public class TernaryOperatorExamples {
         System.out.print("Example (P-2) -- byte/char:\n\t");
         System.out.println(getClazz(_true ? (byte) 1 : (char) 2));
 
-        System.out.print("Example (P-3) -- byte/int:\n\t");
+        System.out.print("Example (P-3) -- byte/int (2):\n\t");
         System.out.println(getClazz(_true ? (byte) 1 : (int) 2));
 
         System.out.print("Example (P-4) -- byte/int (128):\n\t");
         System.out.println(getClazz(_true ? (byte) 1 : (int) 128));
 
-        System.out.print("Example (P-5) -- char/int (1):\n\t");
+        System.out.print("Example (P-5) -- char/int (2):\n\t");
         System.out.println(getClazz(_true ? (char) 1 : (int) 2));
 
         System.out.print("Example (P-6) -- char/int (65536):\n\t");
-        System.out.println(getClazz(!_true ? (char) 1 : (int) 65536));
+        System.out.println(getClazz(_true ? (char) 1 : (int) 65536));
 
         System.out.print("Example (P-7) -- double/short:\n\t");
         System.out.println(getClazz(_true ? 1d : (short) 2));
@@ -45,11 +45,11 @@ public class TernaryOperatorExamples {
         System.out.print("Example (W-1) -- Integer/Double:\n\t");
         System.out.println(getClazz(_true ? new Integer(1) : new Double(2)));
 
-        System.out.print("Example (W-2) -- Integer (1)/Character:\n\t");
-        System.out.println(getClazz(_true ? Integer.valueOf(1) : Character.valueOf((char) 2)));
+        System.out.print("Example (W-2) -- Character/Integer (2):\n\t");
+        System.out.println(getClazz(_true ? Character.valueOf((char)1) : Integer.valueOf(2)));
 
-        System.out.print("Example (W-3) -- Integer (65536)/Character:\n\t");
-        System.out.println(getClazz(!_true ? Integer.valueOf(65536) : Character.valueOf((char) 2)));
+        System.out.print("Example (W-3) -- Character/Integer (65536):\n\t");
+        System.out.println(getClazz(_true ? Character.valueOf((char) 1) : Integer.valueOf(65536)));
 
         System.out.print("Example (W-4) -- short/Integer:\n\t");
         System.out.println(getClazz(_true ? (short) 1 : Integer.valueOf(2)));
